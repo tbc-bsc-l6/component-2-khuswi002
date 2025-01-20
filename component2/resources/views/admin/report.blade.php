@@ -17,7 +17,7 @@
         <a href="index.html" class="logo">BookClub<span>.</span></a>
 
         <div class="icons">
-            <a href="userprofile.html"><i class="fas fa-user" onclick="toggleForm(event)"></i></a>
+            <a href="{{ route('signin') }}"><i class="fas fa-user" onclick="toggleForm(event)"></i></a>
         </div>
     </div>
 
