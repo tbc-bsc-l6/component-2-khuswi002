@@ -13,12 +13,12 @@
 <body>
 <div class="header5">
         <!-- Logo -->
-        <a href="index.html" class="logo">BookClub<span>.</span></a>
+        <a href="{{ route('home') }}" class="logo">BookClub<span>.</span></a>
 
         <!-- Navigation -->
         <nav>
         <ul>
-            <li><a class="active" href="{{ route('home') }}">Home</a></li>
+            <li><a class="active" href="{{ route('home') }}">Dashboard</a></li>
             <li><a href="{{ route('category') }}">Shop</a></li>
             <li><a href="{{ route('display') }}">Brand</a></li>
             <li><a href="{{ route('about') }}">About</a></li>

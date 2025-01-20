@@ -16,6 +16,7 @@ return new class extends Migration
             $table->id(); // Primary key
             $table->string('email')->unique(); // Email column with unique constraint
             $table->string('password'); // Password column
+            $table->enum('role', ['admin', 'customer']);
             $table->timestamps(); // Created at and Updated at timestamps
         });
 

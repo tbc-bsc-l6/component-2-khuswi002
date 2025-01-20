@@ -1,11 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\CustomerController;
+use App\Http\Controllers\Auth\AdminController;
+use App\Http\Controllers\Auth\SigninController;
 
 // Home Route
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('signin');
 })->name('home');
+
+// Sign In Routes
+Route::get('/signin', function () {
+    return view('signin');
+})->name('signin');
+Route::post('/signin', function () {
+    return view('welcome');
+})->name('signin.post');
 
 // Category Route
 Route::get('/category', function () {
@@ -47,28 +58,25 @@ Route::get('/userprofile', function () {
     return view('userprofile');
 })->name('userprofile');
 
-// Sign In Route
-Route::get('/signin', function () {
-    return view('signin');
-})->name('signin');
-
-// Sign Up Customer Route
+// Sign Up Customer Routes
 Route::get('/signupcustomer', function () {
     return view('signupcustomer');
 })->name('signupcustomer');
 
-// Sign Up Admin Route
+// Sign Up Admin Routes
 Route::get('/signupadmin', function () {
     return view('signupadmin');
 })->name('signupadmin');
+
+// Logout Route
+Route::post('/logout', [SigninController::class, 'logout'])->name('logout');
 
 // Checkout Route
 Route::get('/checkout', function () {
     return view('checkout');
 })->name('checkout');
 
-// use App\Http\Controllers\BooksController;
-
+// Books Route
 Route::get('/books', function () {
     return view('books.index');
 });
