@@ -17,8 +17,8 @@
         <nav>
         <ul>
             <li><a class="active" href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('category') }}">Category</a></li>
-            <li><a href="{{ route('display') }}">Shop</a></li>
+            <li><a href="{{ route('display') }}">Category</a></li>
+            <li><a href="{{ route('category') }}">Shop</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
         </nav>
@@ -39,11 +39,11 @@
                 <div class="cart-item" id="cart-product-1">
                     <div class="cart-product-info">
                         <div class="cart-product-image">
-                            <img src="image/book3.jpeg" alt="Product 1">
+                            <img src="{{ asset('images/book17.jpg') }}" alt="Product 1">
                         </div>
                         <div class="cart-product-details">
-                            <h3 class="cart-product-name">Product 1</h3>
-                            <p class="cart-product-description">Description of the product goes here.</p>
+                            <h3 class="cart-product-name">The Wicked King</h3>
+                            <p class="cart-product-description">Holy Black</p>
                         </div>
                     </div>
                     <div class="cart-product-quantity">
@@ -52,34 +52,10 @@
                         <button class="quantity-btn" onclick="updateQuantity('increase', 1)">+</button>
                     </div>
                     <div class="cart-product-price">
-                        <span>$49.99</span>
+                        <span>Rs. 900</span>
                     </div>
                     <div class="cart-actions">
                         <a href="remove_from_cart.php?product_id=1" class="remove-product"><i class="fa fa-trash fa-2x"></i></a>
-                    </div>
-                </div>
-
-                <!-- Another Cart Item -->
-                <div class="cart-item" id="cart-product-2">
-                    <div class="cart-product-info">
-                        <div class="cart-product-image">
-                            <img src="image/book4.jpeg" alt="Product 2">
-                        </div>
-                        <div class="cart-product-details">
-                            <h3 class="cart-product-name">Product 2</h3>
-                            <p class="cart-product-description">Description of the product goes here.</p>
-                        </div>
-                    </div>
-                    <div class="cart-product-quantity">
-                        <button class="quantity-btn" onclick="updateQuantity('decrease', 1)">-</button>
-                        <input type="number" id="quantity-1" value="1" readonly>
-                        <button class="quantity-btn" onclick="updateQuantity('increase', 1)">+</button>
-                    </div>
-                    <div class="cart-product-price">
-                        <span>$89.99</span>
-                    </div>
-                    <div class="cart-actions">
-                        <a href="remove_from_cart.php?product_id=2" class="remove-product"><i class="fa fa-trash fa-2x"></i></a>
                     </div>
                 </div>
             </div>
@@ -89,11 +65,11 @@
                 <h3>Cart Summary</h3>
                 <div class="summary-item">
                     <span>Total Items</span>
-                    <span>2</span>
+                    <span>1</span>
                 </div>
                 <div class="summary-item">
                     <span>Total Price</span>
-                    <span>$139.98</span>
+                    <span>Rs. 900</span>
                 </div>
                 <a href="{{ route('checkout') }}"><button class="checkout-btn">Proceed to Checkout</button></a>
             </div>

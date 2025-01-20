@@ -20,8 +20,8 @@
         <nav>
         <ul>
             <li><a class="active" href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('category') }}">Category</a></li>
-            <li><a href="{{ route('display') }}">Shop</a></li>
+            <li><a href="{{ route('display') }}">Category</a></li>
+            <li><a href="{{ route('category') }}">Shop</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
         </nav>
@@ -37,25 +37,25 @@
     <section class="product-container">
         <div class="product-details">
             <div class="product-image">
-                <img src="{{ asset('images/book3.jpeg') }}" alt="Product Image">
+                <img src="{{ asset('images/book17.jpg') }}" alt="Product Image">
             </div>
             <div class="details">
-                <h2 class="product-title">Title</h2>
-                <p class="author">Author Name</p>
+                <h2 class="product-title">The Wicked King</h2>
+                <p class="author">Holy Black</p>
                 <div class="rating-reviews">
                     <span class="stars">★★★★★</span>
                     <span class="reviews">10 Reviews</span>
                 </div>
                 <p class="availability">Available (In Stock)</p>
-                <p class="price">Price: $0</p>
+                <p class="price">Price: Rs. 900</p>
                 <div class="quantity">
                     <button>-</button>
                     <input type="text" value="1">
                     <button>+</button>
                 </div>
                 <div class="actions">
-                    <button class="add-to-cart">Add to Cart</button>
-                    <button class="order-now">Order Now</button>
+                <a href="{{ route('cart') }}">
+                    <button class="add-to-cart">Add to Cart</button></a>
                 </div>
             </div>
         </div>
@@ -73,7 +73,8 @@
         <div class="tab-content">
             <!-- Description Section -->
             <div class="tab-panel active" id="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p>The Wicked King, by Holly Black, is a young adult fantasy novel that brings mythology and folklore to a contemporary audience.
+                    <br>It is the second novel in the Folk of Air trilogy, following The Cruel Prince and preceding The Queen of Nothing. The Wicked King was a finalist for both the Lodestar Award and the Locus Award in 2020 and won the Goodreads Best Book Awardfor Young Adult Fantasy in 2019. This study guide is for the 2019 paperback edition.</p>
             </div>
 
             <!-- Reviews Section -->
@@ -166,35 +167,30 @@
         <div class="carousel">
             <div class="carousel-track-container">
                 <ul class="carousel-track">
-                    <li class="carousel-slide">
+                <li class="carousel-slide">
                         <img src="{{ asset('images/book1.jpg') }}" alt="Book 1">
-                        <h3>Book Title 1</h3>
-                        <p>$15.99</p>
+                        <h3>The Past is Rising</h3>
+                        <p>Rs. 700</p>
                     </li>
                     <li class="carousel-slide">
                         <img src="{{ asset('images/book2.jpeg') }}" alt="Book 2">
-                        <h3>Book Title 2</h3>
-                        <p>$12.99</p>
+                        <h3>Art Beyond the West</h3>
+                        <p>Rs. 600</p>
                     </li>
                     <li class="carousel-slide">
                         <img src="{{ asset('images/book3.jpeg') }}" alt="Book 3">
-                        <h3>Book Title 3</h3>
-                        <p>$18.99</p>
+                        <h3>The Hobbit</h3>
+                        <p>Rs. 750</p>
                     </li>
                     <li class="carousel-slide">
                         <img src="{{ asset('images/book4.jpeg') }}" alt="Book 4">
-                        <h3>Book Title 4</h3>
-                        <p>$22.99</p>
+                        <h3>The Journey of Dreams</h3>
+                        <p>Rs. 800</p>
                     </li>
                     <li class="carousel-slide">
                         <img src="{{ asset('images/book5.jpeg') }}" alt="Book 5">
-                        <h3>Book Title 5</h3>
-                        <p>$10.99</p>
-                    </li>
-                    <li class="carousel-slide">
-                        <img src="{{ asset('images/book3.jpeg') }}" alt="Book 5">
-                        <h3>Book Title 5</h3>
-                        <p>$10.99</p>
+                        <h3>On Sleepy Hill</h3>
+                        <p>Rs. 750</p>
                     </li>
                 </ul>
             </div>

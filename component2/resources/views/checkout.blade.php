@@ -20,8 +20,8 @@
         <nav>
         <ul>
             <li><a class="active" href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('category') }}">Category</a></li>
-            <li><a href="{{ route('display') }}">Shop</a></li>
+            <li><a href="{{ route('display') }}">Category</a></li>
+            <li><a href="{{ route('category') }}">Shop</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
         </nav>
@@ -39,19 +39,19 @@
                 <h2>Checkout</h2>
                 <div class="form-group">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    <input type="text" id="name" name="name" placeholder="Nancy Thapa" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    <input type="email" id="email" name="email" placeholder="nancy@gmail.com" required>
                 </div>
                 <div class="form-group">
                     <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder="123 Main St" required>
+                    <input type="text" id="address" name="address" placeholder="Lazimpat" required>
                 </div>
                 <div class="form-group">
                     <label for="card">Card Details</label>
-                    <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required>
+                    <input type="text" id="card" name="card" placeholder="9819670471" required>
                 </div>
                 <div class="radio-group">
                     <input type="radio" id="paypal" name="payment">
@@ -63,12 +63,11 @@
             <div class="order-summary">
                 <h3>Order Summary</h3>
                 <ul>
-                    <li><span>Item 1</span><span>$10.00</span></li>
-                    <li><span>Item 2</span><span>$15.00</span></li>
-                    <li><span>Item 3</span><span>$8.00</span></li>
+                    <li><span>The Wicked King</span><span>Rs. 900</span></li>
+                    <li><span>Delivery Charge</span><span>Rs. 100</span></li>
                 </ul>
                 <div class="total">
-                    <span>Total</span><span>$33.00</span>
+                    <span>Total</span><span>Rs. 1000</span>
                 </div>
             </div>
         </div>

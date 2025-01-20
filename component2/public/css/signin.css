@@ -125,7 +125,9 @@
     display: inline-block;
     width: 20px; 
     height: 20px; 
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.032);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     border: 2px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
@@ -148,8 +150,10 @@
   }
 
   .form .overlap-12 button {
-    background-color: #fff;
-    color: #f01012;
+    background: rgba(255, 255, 255, 0.511);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: white;
     padding: 10px;
     width: 200px;
     margin-bottom: 15px;
@@ -162,8 +166,8 @@
   }
   
   .form .overlap-12 button:hover {
-    background-color: #2b2a2a;
-    background-color: #2b2a2a;
+    background-color: #fff;
+    color: darkblue;
   }
   
   .form .overlap-14 {
@@ -172,14 +176,14 @@
     left: 620px; /* Adjust left position as needed */
     font-family: "Poppins-Regular", Helvetica;
     font-size: 14px;
-    color: #000;
+    color: #fff;
     text-align: center;
     justify-content: center;
   }
 
   a {
     text-decoration: none;
-    color: #ffff;
+    color: red;
   }
   
   a:hover {

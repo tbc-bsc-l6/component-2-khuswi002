@@ -18,8 +18,8 @@
         <nav>
         <ul>
             <li><a class="active" href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('category') }}">Category</a></li>
-            <li><a href="{{ route('display') }}">Shop</a></li>
+            <li><a href="{{ route('display') }}">Category</a></li>
+            <li><a href="{{ route('category') }}">Shop</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
 
@@ -33,21 +33,18 @@
     </div>
 
     <main class="landing-section">
-        <div class="text-content">
-            <h1>Your Book Is Waiting For You</h1>
+    <div class="text-content">
+            <h1>Books are where magic meets reality</h1>
             <p>
-                We bring professional chefs to your home to prepare delicious, 
-                customized meals at a fraction of the cost. <br> Get your food easily 
-                and don’t worry about the time.
+              We bring the library to your fingertips with a curated collection of books, tailored to your taste.
+              <br>Discover your next favorite read effortlessly, anytime, anywhere.
             </p>
             <div class="buttons">
-                <a href="#" class="btn-primary">Book Menu</a>
-                <a href="#" class="btn-secondary">Book a Table</a>
+                <a href="#" class="btn-primary">Explore Now</a>
             </div>
         </div>
         <div class="image-content">
-        <img src="{{ asset('images/book4.jpeg') }}" alt="Book">
-        </div>
+          <img src="{{ asset('images/book14.png') }}" alt="Book">
     </main>
 
     <section class="new-releases">
@@ -59,43 +56,43 @@
                 <ul class="carousel-track">
                     <li class="carousel-slide">
                         <img src="{{ asset('images/book1.jpg') }}" alt="Book 1">
-                        <h3>Book Title 1</h3>
-                        <p>$15.99</p>
+                        <h3>The Past is Rising</h3>
+                        <p>Rs. 700</p>
                     </li>
                     <li class="carousel-slide">
                         <img src="{{ asset('images/book2.jpeg') }}" alt="Book 2">
-                        <h3>Book Title 2</h3>
-                        <p>$12.99</p>
+                        <h3>Art Beyond the West</h3>
+                        <p>Rs. 600</p>
                     </li>
                     <li class="carousel-slide">
                         <img src="{{ asset('images/book3.jpeg') }}" alt="Book 3">
-                        <h3>Book Title 3</h3>
-                        <p>$18.99</p>
+                        <h3>The Hobbit</h3>
+                        <p>Rs. 750</p>
                     </li>
                     <li class="carousel-slide">
                         <img src="{{ asset('images/book4.jpeg') }}" alt="Book 4">
-                        <h3>Book Title 4</h3>
-                        <p>$22.99</p>
+                        <h3>The Journey of Dreams</h3>
+                        <p>Rs. 800</p>
                     </li>
                     <li class="carousel-slide">
                         <img src="{{ asset('images/book5.jpeg') }}" alt="Book 5">
-                        <h3>Book Title 5</h3>
-                        <p>$10.99</p>
+                        <h3>On Sleepy Hill</h3>
+                        <p>Rs. 750</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book3.jpeg') }}" alt="Book 6">
-                        <h3>Book Title 5</h3>
-                        <p>$10.99</p>
+                        <img src="{{ asset('images/book25.jpg') }}" alt="Book 6">
+                        <h3>Save me an Orange</h3>
+                        <p>Rs. 650</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book2.jpeg') }}" alt="Book 7">
-                        <h3>Book Title 5</h3>
-                        <p>$10.99</p>
+                        <img src="{{ asset('images/book6.jpg') }}" alt="Book 7">
+                        <h3>A Novel Love Story</h3>
+                        <p>Rs. 700</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book4.jpeg') }}" alt="Book 8">
-                        <h3>Book Title 5</h3>
-                        <p>$10.99</p>
+                        <img src="{{ asset('images/book18.jpg') }}" alt="Book 8">
+                        <h3>The Queen of Nothing</h3>
+                        <p>Rs. 800</p>
                     </li>
                 </ul>
             </div>
@@ -106,16 +103,16 @@
     <section class="book-series">
         <div class="book-card">
           <div class="book-image">
-            <img id="book-cover" src="{{ asset('images/book5.jpeg') }}" alt="Book Cover">
+            <img id="book-cover" src="{{ asset('images/book16.jpeg') }}" alt="Book Cover">
           </div>
           <div class="book-details">
             <p class="new-arrival">New Arrival</p>
-            <h3 id="book-title">Book Title: The Beginning</h3>
+            <h3 id="book-title">The Folk of the Air: The Cruel Prince</h3>
             <div class="rating">
               <span id="book-rating">★ ★ ★ ★ ☆</span>
               <span class="reviews" id="book-reviews">(4.5/10+)</span>
             </div>
-            <p class="price" id="book-price">Rs. 350</p>
+            <p class="price" id="book-price">Rs. 800</p>
             <div class="series-selector">
               <p>Series:</p>
               <div class="series-numbers">
@@ -131,6 +128,42 @@
           </div>
         </div>
       </section>
+
+      <section class="new-releases">
+        <h2>Our Best-Seller</h2>
+        <p>Explore our most liked and best-selling collection!</p>
+        <div class="carousel">
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide">
+                        <img src="{{ asset('images/book19.jpg') }}" alt="Book 1">
+                        <h3>Five Feet Apart</h3>
+                        <p>Rs. 950</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="{{ asset('images/book7.jpg') }}" alt="Book 2">
+                        <h3>Atomic Habits</h3>
+                        <p>Rs. 850</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="{{ asset('images/book8.jpg') }}" alt="Book 3">
+                        <h3>The Sun and Her Flowers</h3>
+                        <p>Rs 800</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="{{ asset('images/book23.jpg') }}" alt="Book 4">
+                        <h3>Voice of Ancestors</h3>
+                        <p>Rs. 1050</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="{{ asset('images/book9.jpg') }}" alt="Book 5">
+                        <h3>Tokyo Hill</h3>
+                        <p>Rs. 800</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <!-- Newsletter -->
     <div class="newsletter-section">
@@ -182,25 +215,25 @@
 
         const books = {
             1: {
-            cover: "{{ asset('images/book5.jpeg') }}",
-            title: "Book Title: The Beginning",
+            cover: "{{ asset('images/book16.jpeg') }}",
+            title: "The Folk of the Air: The Cruel Prince",
             rating: "★ ★ ★ ★ ☆",
-            reviews: "(4.5/10+)",
-            price: "Rs. 350",
+            reviews: "(4.8/10+)",
+            price: "Rs. 800",
             },
             2: {
-            cover: "{{ asset('images/book2.jpeg') }}",
-            title: "Book Title: The Journey",
+            cover: "{{ asset('images/book17.jpg') }}",
+            title: "The Folk of the Air: The Wicked King",
             rating: "★ ★ ★ ★ ★",
             reviews: "(5.0/15+)",
-            price: "Rs. 400",
+            price: "Rs. 900",
             },
             3: {
-            cover: "{{ asset('images/book3.jpeg') }}",
-            title: "Book Title: The Finale",
+            cover: "{{ asset('images/book18.jpg') }}",
+            title: "The Folk of the Air: The Queen of Nothing",
             rating: "★ ★ ★ ☆ ☆",
-            reviews: "(3.8/8+)",
-            price: "Rs. 300",
+            reviews: "(4.3/8+)",
+            price: "Rs. 850",
             },
         };
         

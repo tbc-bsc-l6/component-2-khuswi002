@@ -20,8 +20,8 @@
         <nav>
         <ul>
             <li><a class="active" href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('category') }}">Category</a></li>
-            <li><a href="{{ route('display') }}">Shop</a></li>
+            <li><a href="{{ route('display') }}">Category</a></li>
+            <li><a href="{{ route('category') }}">Shop</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
         </nav>
@@ -35,19 +35,17 @@
 
     <main class="landing-section">
         <div class="text-content">
-            <h1>Your Book Is Waiting For You</h1>
+            <h1>Unlock stories, wisdom, and dreams</h1>
             <p>
-                We bring professional chefs to your home to prepare delicious, 
-                customized meals at a fraction of the cost. <br> Get your food easily 
-                and don’t worry about the time.
+            We bring the world of books to your doorstep,
+            offering handpicked stories and <br> knowledge at your fingertips.
             </p>
             <div class="buttons">
-                <a href="#" class="btn-primary">Book Menu</a>
-                <a href="#" class="btn-secondary">Book a Table</a>
+                <a href="#" class="btn-primary">Explore Now</a>
             </div>
         </div>
         <div class="image-content">
-            <img src="{{ asset('images/book1.jpg') }}" alt="Book">
+            <img src="{{ asset('images/book15.png') }}" alt="Book">
         </div>
     </main>
 
@@ -61,20 +59,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="categories">
-                <h3>Categories</h3>
-                <ul>
-                    <li>Rom-com</li>
-                    <li>Thriller</li>
-                    <li>Fantasy</li>
-                    <li>Horror</li>
-                    <li>Anime</li>
-                </ul>
-            </div>
-        </aside>
-
         <!-- Main Content -->
         <main class="main-content">
             <!-- Product Grid -->
@@ -82,91 +66,91 @@
                 <div class="product-card">
                 <a href="{{ route('details') }}">
                     <img src="{{ asset('images/book1.jpg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <p>The Past is Rising<br><span>Rs. 700</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
                     <img src="{{ asset('images/book2.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <p>Art Beyond the West<br><span>Rs. 800</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
                     <img src="{{ asset('images/book3.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <p>The Hobbit<br><span>Rs. 650</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
                     <img src="{{ asset('images/book4.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <p>The Journey of Dreams<br><span>Rs. 800</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
                     <img src="{{ asset('images/book5.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <p>On Sleepy Hill<br><span>Rs. 750</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book2.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book6.jpg') }}" alt="Product Image"></a>
+                    <p>A Novel Love Story<br><span>Rs. 650</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book4.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book7.jpg') }}" alt="Product Image"></a>
+                    <p>Atomic Habits<br><span>Rs. 800</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book5.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book8.jpg') }}" alt="Product Image"></a>
+                    <p>The Sun and Her Flowers<br><span>Rs. 800</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book2.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book24.jpg') }}" alt="Product Image"></a>
+                    <p>Ten Types of Human<br><span>Rs. 700</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book4.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book10.jpg') }}" alt="Product Image"></a>
+                    <p>Shadow Warrior<br><span>Rs. 850</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book5.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book17.jpg') }}" alt="Product Image"></a>
+                    <p>The Wicked King<br><span>Rs. 900</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book2.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book20.jpg') }}" alt="Product Image"></a>
+                    <p>How to Talk to Anyone<br><span>Rs. 750</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book2.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book16.jpeg') }}" alt="Product Image"></a>
+                    <p>The Cruel Prince<br><span>Rs. 800</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book2.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book19.jpg') }}" alt="Product Image"></a>
+                    <p>Five Feet Apart<br><span>Rs. 700</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product-card">
                 <a href="{{ route('details') }}">
-                    <img src="{{ asset('images/book2.jpeg') }}" alt="Product Image"></a>
-                    <p>Name<br><span>$0.0</span></p>
+                    <img src="{{ asset('images/book23.jpg') }}" alt="Product Image"></a>
+                    <p>Voice of Ancestors<br><span>Rs. 950</span></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
