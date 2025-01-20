@@ -14,13 +14,13 @@ Route::get('/', function () {
 Route::get('/signin', function () {
     return view('signin');
 })->name('signin');
-// Route::post('/signin', function () {
-//     return view('welcome');
-// })->name('signin.post');
-
 Route::post('/signin', function () {
-    return view('admin.dashboard'); // This should load resources/views/admin/dashboard.blade.php
+    return view('welcome');
 })->name('signin.post');
+
+// Route::post('/signin', function () {
+//     return view('admin.dashboard'); // This should load resources/views/admin/dashboard.blade.php
+// })->name('signin.post');
 
 
 // Category Route
