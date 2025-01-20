@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,7,102,1) 55%, rgba(47,13,102,1) 85%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.header5 {
+    position: relative;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #4a77e5; /* Highlighted color for part of the logo */
+}
+
+/* Navigation styling */
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Ensure pseudo-elements are positioned relative to the list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 18px;
+    font-weight: 500;
+    position: relative; /* Needed for pseudo-elements to position relative to the link */
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:after {
+    bottom: 0; /* Position below the text */
+    left: 0;
+}
+
+
+nav ul li a:hover:after {
+    width: 100%; /* Expand line width on hover */
+}
+
+/* Icon Styling*/
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.icons a:hover {
+    color: plum;
+}
+
+/* user profile */
+.profile-container {
+    width: 50%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.032);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-header h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.profile-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.avatar-container {
+    flex: 1;
+    text-align: center;
+}
+
+.avatar-container img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-bottom: 15px;
+}
+
+.avatar-container button {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 10px auto;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: palevioletred;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.avatar-container button:hover {
+    background-color: palevioletred;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#avatar-input {
+    display: none;
+}
+
+.form-container {
+    flex: 2;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    flex: 2;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.162);
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.social-container {
+    display: flex;
+    gap: 15px;
+    text-align: left;
+}
+
+.social-container a {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-container a:hover {
+    color: palevioletred;
+    transform: scale(1.1);
+}
+
+.update-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.update-button button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: palevioletred;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}   
+
+.update-button button:hover {
+    background-color: palevioletred;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* @media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar-container {
+        margin-bottom: 20px;
+    }
+} */
+
+
+/* footer */
+.footer-section {
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: plum;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.payment-icons img,
+.app-icons img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+}

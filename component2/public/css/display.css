@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,7,102,1) 55%, rgba(47,13,102,1) 85%);
+background-size: 200% 200%;
+animation: gradientAnimation 5s ease infinite;
+height: 100vh;
+margin: 0;
+}
+
+@keyframes gradientAnimation {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+.header5 {
+position: relative;
+top: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 40px;
+}
+
+a {
+text-decoration: none;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #4a77e5; /* Highlighted color for part of the logo */
+}
+
+/* Navigation styling */
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Ensure pseudo-elements are positioned relative to the list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 18px;
+    font-weight: 500;
+    position: relative; /* Needed for pseudo-elements to position relative to the link */
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:after {
+    bottom: 0; /* Position below the text */
+    left: 0;
+}
+
+
+nav ul li a:hover:after {
+    width: 100%; /* Expand line width on hover */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Icon Styling*/
+.icons a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.icons a:hover {
+    color: plum;
+}

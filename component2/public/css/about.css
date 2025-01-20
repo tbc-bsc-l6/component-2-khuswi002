@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,7,102,1) 55%, rgba(47,13,102,1) 85%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.header5 {
+    position: relative;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #4a77e5; /* Highlighted color for part of the logo */
+}
+
+/* Navigation styling */
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Ensure pseudo-elements are positioned relative to the list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 18px;
+    font-weight: 500;
+    position: relative; /* Needed for pseudo-elements to position relative to the link */
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:after {
+    bottom: 0; /* Position below the text */
+    left: 0;
+}
+
+
+nav ul li a:hover:after {
+    width: 100%; /* Expand line width on hover */
+}
+
+/* Icon Styling*/
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.icons a:hover {
+    color: plum;
+}
+
+
+/* footer */
+.footer-section {
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: plum;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.payment-icons img,
+.app-icons img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+}

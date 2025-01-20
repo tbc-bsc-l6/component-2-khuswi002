@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-    <script src="{{ asset('js/script.js') }}"></script>
+<script src="{{ asset('js/script.js') }}"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap" rel="stylesheet">
@@ -17,20 +18,19 @@
 
         <!-- Navigation -->
         <nav>
-        <ul>
-            <li><a class="active" href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('category') }}">Shop</a></li>
-            <li><a href="{{ route('display') }}">Brand</a></li>
-            <li><a href="{{ route('about') }}">About</a></li>
-            <li><a href="{{ route('contact') }}">Contact</a></li>
-        </ul>
-
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="category.html">Shop</a></li>
+                <li><a href="display.html">Brand</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
         </nav>
 
         <div class="icons">
-            <a href="{{ route('wishlist') }}"><i class="fa-solid fa-heart"></i></a>
-            <a href="{{ route('cart') }}"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="{{ route('userprofile') }}"><i class="fas fa-user" onclick="toggleForm(event)"></i></a>
+            <a href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="userprofile.html"><i class="fas fa-user" onclick="toggleForm(event)"></i></a>
         </div>
     </div>
 
@@ -60,42 +60,42 @@
             <div class="carousel-track-container">
                 <ul class="carousel-track">
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book1.jpg') }}" alt="Book 1">
+                        <img src="image/book1.jpg" alt="Book 1">
                         <h3>Book Title 1</h3>
                         <p>$15.99</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book2.jpeg') }}" alt="Book 2">
+                        <img src="image/book2.jpeg" alt="Book 2">
                         <h3>Book Title 2</h3>
                         <p>$12.99</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book3.jpeg') }}" alt="Book 3">
+                        <img src="image/book3.jpeg" alt="Book 3">
                         <h3>Book Title 3</h3>
                         <p>$18.99</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book4.jpeg') }}" alt="Book 4">
+                        <img src="image/book4.jpeg" alt="Book 4">
                         <h3>Book Title 4</h3>
                         <p>$22.99</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book5.jpeg') }}" alt="Book 5">
+                        <img src="image/book5.jpeg" alt="Book 5">
                         <h3>Book Title 5</h3>
                         <p>$10.99</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book3.jpeg') }}" alt="Book 6">
+                        <img src="image/book3.jpeg" alt="Book 5">
                         <h3>Book Title 5</h3>
                         <p>$10.99</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book2.jpeg') }}" alt="Book 7">
+                        <img src="image/book2.jpeg" alt="Book 5">
                         <h3>Book Title 5</h3>
                         <p>$10.99</p>
                     </li>
                     <li class="carousel-slide">
-                        <img src="{{ asset('images/book4.jpeg') }}" alt="Book 8">
+                        <img src="image/book4.jpeg" alt="Book 5">
                         <h3>Book Title 5</h3>
                         <p>$10.99</p>
                     </li>
@@ -108,7 +108,7 @@
     <section class="book-series">
         <div class="book-card">
           <div class="book-image">
-            <img id="book-cover" src="{{ asset('images/book5.jpeg') }}" alt="Book Cover">
+            <img id="book-cover" src="image/book5.jpeg" alt="Book Cover">
           </div>
           <div class="book-details">
             <p class="new-arrival">New Arrival</p>

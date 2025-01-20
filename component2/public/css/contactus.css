@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,7,102,1) 55%, rgba(47,13,102,1) 85%);
+background-size: 200% 200%;
+animation: gradientAnimation 5s ease infinite;
+height: 100vh;
+margin: 0;
+}
+
+@keyframes gradientAnimation {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+.header5 {
+position: relative;
+top: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 40px;
+}
+
+a {
+text-decoration: none;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #4a77e5; /* Highlighted color for part of the logo */
+}
+
+/* Navigation styling */
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Ensure pseudo-elements are positioned relative to the list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 18px;
+    font-weight: 500;
+    position: relative; /* Needed for pseudo-elements to position relative to the link */
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:after {
+    bottom: 0; /* Position below the text */
+    left: 0;
+}
+
+
+nav ul li a:hover:after {
+    width: 100%; /* Expand line width on hover */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Icon Styling*/
+.icons a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.icons a:hover {
+    color: plum;
+}
+
+/* contact */
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.032);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  height: 70vh;
+  margin-bottom: 30px;
+}
+
+.box h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Container for form and newsletter */
+.form-newsletter-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.contact-form {
+  flex: 2; /* Take more space compared to newsletter */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  /* background: rgba(255, 255, 255, 0.032);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+}
+
+.form-row {
+  display: flex; /* Arrange child elements horizontally */
+  gap: 10px; /* Add spacing between input fields */
+  width: 100%; /* Ensure rows take full width */
+}
+
+.form-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 30px;
+  height: 25px;
+  border: 1px solid #ccc;
+  background-color: #dbe8e4;
+  margin-bottom: 10px;
+}
+
+.email-input {
+  padding: 12px;
+  height: 25px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+  background-color: #dbe8e4;
+  outline: none;
+}
+
+.form-textarea {
+  width: calc(100%-15px);
+  padding: 10px;
+  border-radius: 20px;
+  height: 100px;
+  border: 1px solid #ccc;
+  background-color: #dbe8e4;
+}
+
+.submit-button {
+  background-color: palevioletred;
+  color: white;
+  padding: 13px 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 30%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: palevioletred;
+  transform: translateY(-2px);
+}
+
+
+/* Newsletter Section */
+.newsletter {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.032);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding: 30px 20px 50px 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; /* Allows controlled shifting */
+  top: 20px;
+}
+
+.newsletter h3 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 14px;
+  margin: 10px 0 30px;
+}
+
+.newsletter-input {
+  width: 94%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 25px;
+  font-size: 14px;
+  background-color: #f3f3f3;
+  outline: none;
+}
+
+.newsletter-button {
+  width: 100%;
+  background-color: white;
+  color: palevioletred;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter-button:hover {
+  background-color: palevioletred;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.info-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.032);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.info-box span {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.info-box:hover {
+  box-shadow: 0 10px 30px rgba(209, 138, 248, 0.5), 0 0 10px rgba(209, 138, 248, 0.5);
+  transform: translateY(-5px); /* Slightly move the box upwards */
+}
+
+.map {
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+}
+
+
+/* footer */
+.footer-section {
+    padding: 40px 20px;
+    color: #fff;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-column p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: plum;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .payment-icons img,
+  .app-icons img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  
