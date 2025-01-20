@@ -18,6 +18,11 @@ Route::post('/signin', function () {
     return view('welcome');
 })->name('signin.post');
 
+// Route::post('/signin', function () {
+//     return view('admin.dashboard'); // This should load resources/views/admin/dashboard.blade.php
+// })->name('signin.post');
+
+
 // Category Route
 Route::get('/category', function () {
     return view('category');
@@ -32,11 +37,6 @@ Route::get('/details', function () {
 Route::get('/display', function () {
     return view('display');
 })->name('display');
-
-// About Route
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
 
 // Contact Route
 Route::get('/contact', function () {
@@ -80,3 +80,33 @@ Route::get('/checkout', function () {
 Route::get('/books', function () {
     return view('books.index');
 });
+
+// Admin Dashboard Route
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
+
+// Add Product Route
+Route::get('/admin/add', function () {
+    return view('admin.add');
+})->name('admin.add');
+
+// Product Management Route
+Route::get('/admin/product', function () {
+    return view('admin.product');
+})->name('admin.product');
+
+// Orders Route
+Route::get('/admin/order', function () {
+    return view('admin.order');
+})->name('admin.order');
+
+// Update Product Route
+Route::get('/admin/update', function () {
+    return view('admin.update');
+})->name('admin.update');
+
+// Reports Route
+Route::get('/admin/report', function () {
+    return view('admin.report');
+})->name('admin.report');

@@ -17,9 +17,8 @@
         <nav>
         <ul>
             <li><a class="active" href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('category') }}">Shop</a></li>
-            <li><a href="{{ route('display') }}">Brand</a></li>
-            <li><a href="{{ route('about') }}">About</a></li>
+            <li><a href="{{ route('category') }}">Category</a></li>
+            <li><a href="{{ route('display') }}">Shop</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
         </nav>
@@ -125,13 +124,13 @@
         });              
     </script>
 
-    <!-- footer -->
+      <!-- footer -->
     <footer class="footer-section">
         <div class="footer-container">
         <div class="footer-column">
-            <h3>Clothify</h3>
-            <p>info@clothify.com</p>
-            <p>Dhapasi, Kathmandu, Nepal</p>
+            <h3>BookClub.</h3>
+            <p>info@bookclub.com</p>
+            <p>Jhamsikhel, Lalitpur, Nepal</p>
             <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -154,30 +153,24 @@
             <h4>Support</h4>
             <ul>
             <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Customer Service</a></li>
             <li><a href="#">Shipping Policy</a></li>
             <li><a href="#">Sitemap</a></li>
             </ul>
         </div>
     
         <div class="footer-column">
-            <h4>Payment</h4>
-            <p>We accept:</p>
-            <div class="payment-icons">
-            <img src="khalti-icon.png" alt="Khalti">
-            <img src="esewa-icon.png" alt="eSewa">
-            <img src="visa-icon.png" alt="Visa Card">
-            <img src="mastercard-icon.png" alt="MasterCard">
-            </div>
-            <h4>Download App</h4>
-            <div class="app-icons">
-            <img src="google-play-icon.png" alt="Google Play">
-            <img src="app-store-icon.png" alt="App Store">
-            </div>
+            <h4>Help</h4>
+            <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Report a Problem</a></li>
+            <li><a href="#">Support Requests</a></li>
+            </ul>
         </div>
         </div>
         <div class="footer-bottom">
-        <p>&copy; 2024 Clothify. All rights reserved.</p>
+        <p>&copy; 2025 BookClub. All rights reserved.</p>
         </div>
     </footer>
 </body>

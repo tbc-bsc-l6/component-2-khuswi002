@@ -22,34 +22,35 @@
     </div>
 
     <div class="top-level-container">
-        <nav class="sidebar">
-            <ul class="optionlist">
-                <li>
-                    <i class='bx bxs-dashboard'></i>
-                    <a href="dashboard.html">Dashboard</a>
-                </li>
-                <li>
-                    <i class='bx bx-user'></i>
-                    <a href="product.html">Product</a>
-                </li>
-                <li>
-                    <i class='bx bx-book'></i>
-                    <a href="add.html">Add</a>
-                </li>
-                <li>
-                    <i class='bx bx-calendar-event'></i>
-                    <a href="order.html">Order</a>
-                </li>
-                <li>
-                    <i class='bx bx-bar-chart'></i>
-                    <a href="report.html">Reports</a>
-                </li>
-                <li>
-                    <i class='bx bx-cog'></i>
-                    <a href="setting.html">Settings</a>
-                </li>
-            </ul>
-        </nav>        
+    <nav class="sidebar">
+        <ul class="optionlist">
+            <li>
+                <i class='bx bxs-dashboard'></i>
+                <a href="{{ route('admin.dashboard') }}">Dashboard</a>
+            </li>
+            <li>
+                <i class='bx bx-user'></i>
+                <a href="{{ route('admin.product') }}">Product</a>
+            </li>
+            <li>
+                <i class='bx bx-book'></i>
+                <a href="{{ route('admin.add') }}">Add</a>
+            </li>
+            <li>
+                <i class='bx bx-calendar-event'></i>
+                <a href="{{ route('admin.order') }}">Order</a>
+            </li>
+            <li>
+                <i class='bx bx-bar-chart'></i>
+                <a href="{{ route('admin.report') }}">Reports</a>
+            </li>
+            <li>
+                <i class='bx bx-cog'></i>
+                <a href="#">Settings</a>
+            </li>
+        </ul>
+    </nav>
+        
 
         <main class="main">
             <section class="card">

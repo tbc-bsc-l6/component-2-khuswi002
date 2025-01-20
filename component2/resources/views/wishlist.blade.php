@@ -20,9 +20,8 @@
         <nav>
         <ul>
             <li><a class="active" href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('category') }}">Shop</a></li>
-            <li><a href="{{ route('display') }}">Brand</a></li>
-            <li><a href="{{ route('about') }}">About</a></li>
+            <li><a href="{{ route('category') }}">Category</a></li>
+            <li><a href="{{ route('display') }}">Shop</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
         </nav>

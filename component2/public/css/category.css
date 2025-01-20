@@ -117,6 +117,7 @@ nav ul li a:hover:after {
 
 .text-content {
     max-width: 70%;
+    margin-left: 40px;
 }
 
 .text-content h1 {
@@ -148,12 +149,13 @@ nav ul li a:hover:after {
 }
 
 .btn-primary {
-    background: plum;
-    color: #fff;
+    background: white;
+    color: darkblue;
 }
 
 .btn-primary:hover {
-    background: plum;
+    background: palevioletred;
+    color: white;
 }
 
 .btn-secondary {
@@ -171,51 +173,38 @@ nav ul li a:hover:after {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
+    position: relative;
+    left: 80px;
 }
 
 .image-content img {
     max-width: 100%; /* Ensure the image doesn't exceed its container's width */
     height: auto; /* Maintain the aspect ratio */
     max-height: 400px; /* Prevent the image from growing too tall */
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Main container styling */
 .container {
     display: flex;
-    gap: 20px;
+    justify-content: center; /* Center the main content horizontally */
     padding: 20px;
 }
 
-.sidebar {
-    width: 20%;
-}
-
-.sidebar h3 {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-    cursor: pointer;
-    color: #fff;
-}
-
-/* main content */
+/* Main content styling */
 .main-content {
-    width: 75%;
+    width: 100%; /* Ensure it spans full width */
+    display: flex;
+    flex-direction: column; /* Stack the filters and product grid vertically */
+    align-items: center; /* Center content horizontally */
 }
 
+/* Filters styling */
 .filters {
+    width: 100%; /* Take full width of the main-content */
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align buttons to the right */
     margin-bottom: 20px;
+    left: 90px;
 }
 
 .filters button {
@@ -230,11 +219,12 @@ nav ul li a:hover:after {
     background-color: #f0f0f0;
 }
 
-/* product display */
+/* Product grid styling */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns */
+    gap: 40px;
+    justify-content: center; /* Center items horizontally in the grid */
 }
 
 .product-card {
@@ -275,8 +265,8 @@ nav ul li a:hover:after {
 
 .add-to-cart {
     padding: 8px 16px;
-    background-color: plum;
-    color: white;
+    background-color: white;
+    color: darkblue;
     border: none;
     cursor: pointer;
     border-radius: 5px;

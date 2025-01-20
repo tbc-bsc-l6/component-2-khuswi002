@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-    <script src="{{ asset('js/script.js') }}"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap" rel="stylesheet">
@@ -18,10 +17,9 @@
         <!-- Navigation -->
         <nav>
         <ul>
-            <li><a class="active" href="{{ route('home') }}">Dashboard</a></li>
-            <li><a href="{{ route('category') }}">Shop</a></li>
-            <li><a href="{{ route('display') }}">Brand</a></li>
-            <li><a href="{{ route('about') }}">About</a></li>
+            <li><a class="active" href="{{ route('home') }}">Home</a></li>
+            <li><a href="{{ route('category') }}">Category</a></li>
+            <li><a href="{{ route('display') }}">Shop</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
 
@@ -145,60 +143,137 @@
         <p class="privacy-note">We respect your privacy. Unsubscribe anytime.</p>
     </div>
 
-    <!-- footer -->
-    <footer class="footer-section">
-        <div class="footer-container">
-        <div class="footer-column">
-            <h3>Clothify</h3>
-            <p>info@clothify.com</p>
-            <p>Dhapasi, Kathmandu, Nepal</p>
-            <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const nextButton = document.querySelector('.next-btn');
+        const prevButton = document.querySelector('.prev-btn');
+        const slideWidth = slides[0].getBoundingClientRect().width;
+
+        // Arrange the slides next to each other
+        slides.forEach((slide, index) => {
+            slide.style.left = slideWidth * index + 'px';
+        });
+
+        let currentSlideIndex = 0;
+
+        // Move to the next slide
+        nextButton.addEventListener('click', () => {
+            if (currentSlideIndex < slides.length - 1) {
+                currentSlideIndex++;
+            } else {
+                currentSlideIndex = 0; // Loop back to the first slide
+            }
+            const amountToMove = slides[currentSlideIndex].style.left;
+            track.style.transform = `translateX(-${amountToMove})`;
+        });
+
+        // Move to the previous slide
+        prevButton.addEventListener('click', () => {
+            if (currentSlideIndex > 0) {
+                currentSlideIndex--;
+            } else {
+                currentSlideIndex = slides.length - 1; // Loop to the last slide
+            }
+            const amountToMove = slides[currentSlideIndex].style.left;
+            track.style.transform = `translateX(-${amountToMove})`;
+        });
+
+
+        const books = {
+            1: {
+            cover: "{{ asset('images/book5.jpeg') }}",
+            title: "Book Title: The Beginning",
+            rating: "★ ★ ★ ★ ☆",
+            reviews: "(4.5/10+)",
+            price: "Rs. 350",
+            },
+            2: {
+            cover: "{{ asset('images/book2.jpeg') }}",
+            title: "Book Title: The Journey",
+            rating: "★ ★ ★ ★ ★",
+            reviews: "(5.0/15+)",
+            price: "Rs. 400",
+            },
+            3: {
+            cover: "{{ asset('images/book3.jpeg') }}",
+            title: "Book Title: The Finale",
+            rating: "★ ★ ★ ☆ ☆",
+            reviews: "(3.8/8+)",
+            price: "Rs. 300",
+            },
+        };
+        
+        document.querySelectorAll(".series-number").forEach((button) => {
+            button.addEventListener("click", () => {
+            // Remove active class from all series numbers
+            document.querySelectorAll(".series-number").forEach((btn) => btn.classList.remove("active"));
+        
+            // Add active class to the clicked series number
+            button.classList.add("active");
+        
+            // Get the series number
+            const series = button.getAttribute("data-series");
+        
+            // Update the book details based on the series number
+            const book = books[series];
+            document.getElementById("book-cover").src = book.cover;
+            document.getElementById("book-title").textContent = book.title;
+            document.getElementById("book-rating").textContent = book.rating;
+            document.getElementById("book-reviews").textContent = book.reviews;
+            document.getElementById("book-price").textContent = book.price;
+            });
+        });
+    </script>
+
+      <!-- footer -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>BookClub.</h3>
+        <p>info@bookclub.com</p>
+        <p>Jhamsikhel, Lalitpur, Nepal</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
-    
-        <div class="footer-column">
-            <h4>Company</h4>
-            <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
-    
-        <div class="footer-column">
-            <h4>Support</h4>
-            <ul>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Shipping Policy</a></li>
-            <li><a href="#">Sitemap</a></li>
-            </ul>
-        </div>
-    
-        <div class="footer-column">
-            <h4>Payment</h4>
-            <p>We accept:</p>
-            <div class="payment-icons">
-            <img src="khalti-icon.png" alt="Khalti">
-            <img src="esewa-icon.png" alt="eSewa">
-            <img src="visa-icon.png" alt="Visa Card">
-            <img src="mastercard-icon.png" alt="MasterCard">
-            </div>
-            <h4>Download App</h4>
-            <div class="app-icons">
-            <img src="google-play-icon.png" alt="Google Play">
-            <img src="app-store-icon.png" alt="App Store">
-            </div>
-        </div>
-        </div>
-        <div class="footer-bottom">
-        <p>&copy; 2024 Clothify. All rights reserved.</p>
-        </div>
-    </footer>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Report a Problem</a></li>
+          <li><a href="#">Support Requests</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BookClub. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
